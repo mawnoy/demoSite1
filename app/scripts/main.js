@@ -1,6 +1,6 @@
 require.config({
     paths: {
-        jquery: '../bower_components/jquery/dist/jquery',
+        jquery: '../bower_components/jquery/jquery',
         bootstrapAffix: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix',
         bootstrapAlert: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert',
         bootstrapButton: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button',
@@ -54,10 +54,19 @@ require.config({
     }
 });
 
-require(['jquery', 'app'], function ($, app) {
+require(['jquery', 'app', 'bootstrapModal'], function ($, app) {
     'use strict';
     // use app here
     console.log(app.square(16));
     // console.log(square(2));
     console.log('Running jQuery %s', $().jquery);
+    // console.log(bootstrapButton);
+    $('#myModal').modal();
+});
+
+require(['app', 'greeting'], function(app, greeting) {
+    'use strict';
+    greeting.greeting('Hello Dev');
+    console.log('Running jQuery %s', $().jquery);
+    console.log(app.square(16));
 });

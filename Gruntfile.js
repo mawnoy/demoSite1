@@ -366,7 +366,10 @@ module.exports = function (grunt) {
             bower: {
                 expand: true,
                 cwd: '<%= yeoman.app %>/bower_components/',
-                src: '{,*/}*.js',
+                src: [
+                    '{,*/}*.js',
+                    'bootstrap-sass/assets/javascripts/bootstrap/*.js'
+                ],
                 dest: '.tmp/bower_components',
                 ext: '.js'
             },
