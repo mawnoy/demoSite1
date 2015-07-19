@@ -1,19 +1,19 @@
 require.config({
     paths: {
-        jquery: '../bower_components/jquery/jquery',
-        bootstrapAffix: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/affix',
-        bootstrapAlert: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/alert',
-        bootstrapButton: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/button',
-        bootstrapCarousel: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/carousel',
-        bootstrapCollapse: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse',
-        bootstrapDropdown: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/dropdown',
-        bootstrapModal: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/modal',
-        bootstrapPopover: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/popover',
-        bootstrapScrollspy: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy',
-        bootstrapTab: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab',
-        bootstrapTooltip: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tooltip',
-        bootstrapTransition: '../bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/transition'
-},
+        jquery: '../bower_components/jquery/dist/jquery',
+        bootstrapAffix: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix',
+        bootstrapAlert: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert',
+        bootstrapButton: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button',
+        bootstrapCarousel: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel',
+        bootstrapCollapse: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse',
+        bootstrapDropdown: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown',
+        bootstrapModal: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal',
+        bootstrapPopover: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover',
+        bootstrapScrollspy: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy',
+        bootstrapTab: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab',
+        bootstrapTooltip: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip',
+        bootstrapTransition: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition'
+    },
     shim: {
         bootstrapAffix: {
             deps: ['jquery']
@@ -54,9 +54,10 @@ require.config({
     }
 });
 
-require(['app', 'jquery'], function (app, $) {
+require(['jquery', 'app'], function ($, app) {
     'use strict';
     // use app here
-    console.log(app);
+    console.log(app.square(16));
+    // console.log(square(2));
     console.log('Running jQuery %s', $().jquery);
 });

@@ -24,12 +24,36 @@ module.exports = function (grunt) {
             app: 'app',
             dist: 'dist'
         },
-
+        /// Compiles ES6 with Babel
+        babel: {
+            options: {
+                sourceMap: true,
+                modules: 'amd'
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/scripts/lib',
+                    src: '{,*/}*.js',
+                    dest: '.tmp/scripts',
+                    ext: '.js'
+                }]
+            },
+            test: {
+                files: [{
+                    expand: true,
+                    cwd: 'test/spec',
+                    src: '{,*/}*.js',
+                    dest: '.tmp/spec',
+                    ext: '.js'
+                }]
+            }
+        },
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             js: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-                tasks: ['jshint'],
+                tasks: ['babel', 'jshint'],
                 options: {
                     livereload: true
                 }
@@ -188,7 +212,7 @@ module.exports = function (grunt) {
             app: {
                 html: '<%= yeoman.app %>/index.html',
                 ignorePath: '<%= yeoman.app %>/',
-                exclude: [ '<%= yeoman.app %>/bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js' ]
+                exclude: [ '<%= yeoman.app %>/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js' ]
             }
         },
 
@@ -328,9 +352,23 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/*.*'
+                        'bower_components/bootstrap-sass/assets/fonts/bootstrap/*.*'
                     ]
                 }]
+            },
+            script: {
+                expand: true,
+                cwd: '<%= yeoman.app %>/scripts/',
+                src: 'main.js',
+                dest: '.tmp/scripts',
+                ext: '.js'
+            },
+            bower: {
+                expand: true,
+                cwd: '<%= yeoman.app %>/bower_components/',
+                src: '{,*/}*.js',
+                dest: '.tmp/bower_components',
+                ext: '.js'
             },
             styles: {
                 expand: true,
@@ -358,13 +396,18 @@ module.exports = function (grunt) {
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
+                'babel:dist',
                 'compass:server',
                 'copy:styles'
             ],
             test: [
+                'babel',
                 'copy:styles'
             ],
             dist: [
+                'babel',
+                'copy:bower',
+                'copy:script',
                 'compass',
                 'copy:styles',
                 'imagemin',
