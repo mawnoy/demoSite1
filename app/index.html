@@ -1,106 +1,229 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>demoSite1</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+    <title>demoSite1 | Theme</title>
 
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
 
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">demoSite1</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
-  Loading state
-</button>
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-
-                    <h4>RequireJS</h4>
-                    <p>RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node.</p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
-
+  <header class="header-main">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">demoSite1</a>
         </div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" data-show="false" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-sub pull-right">
+            <li><a href="#register">Register</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </nav>
+  </header>
+
+  <section class="showcase">
+    <div class="container showcase-content">
+      <h1>Demo site - Theme</h1>
+      <p class="lead">Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipisicing elit. Nulla perspiciatis ipsa quos deleniti sapiente. Unde beatae nam ea modi, facilis.</p>
+      <a class="btn btn-default" href="#" role="button">DOWNLOAD</a>
+      <a class="btn btn-default" href="#" role="button">APPSTORE</a>
+    </div>
+  </section><!-- /.show-case -->
+
+  <section class="section-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form class="search">
+            <div>
+              <input type="search" placeholder="Search our website product">
+              <button class="btn btn-success" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section><!-- /.section-light -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="block block-primary">
+            <h3><span class="glyphicon glyphicon-check"></span> Sleek</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim eum</p>
+            <a class="btn btn-default" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block block-secondary">
+            <h3><span class="glyphicon glyphicon-check"></span> Responsive</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim eum</p>
+            <a class="btn btn-default" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block block-primary">
+            <h3><span class="glyphicon glyphicon-check"></span> Clean</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim eum</p>
+            <a class="btn btn-default" href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="block block-light text-center">
+            <span class="glyphicon glyphicon-star"></span>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block block-light text-center">
+            <span class="glyphicon glyphicon-education"></span>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block block-light text-center">
+            <span class="glyphicon glyphicon-grain"></span>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block block-light text-center">
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /.section -->
+
+  <section class="section-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="page-header">Use <span class="em-primary">demo site on All devices</span></h2>
+          <ul class="list list-features">
+            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
+            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
+            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
+            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
+          </ul>
+          <a class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div class="col-md-6">
+          <img class="devices" src="images/devices.png" width="70%"></img>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="devices" src="images/device-iphone.png"></img>
+        </div>
+        <div class="col-md-6">
+          <h2 class="page-header">Try this Demo site For 30 days FREE!</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aliquam libero, odio corporis, natus quas!</p>
+          <a class="btn btn-default btn-round btn-lg" href="#">Download This</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Get Demo site</h4>
+          <ul>
+            <li class="app-appstore"><a href="#">App Store</a></li>
+            <li class="app-play"><a href="#">Google Play</a></li>
+            <li class="app-droid"><a href="#">Android</a></li>
+            <li class="app-windows"><a href="#">Windows</a></li>
+            <li class="app-chorme"><a href="#">Chorme</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>About</h4>
+          <ul>
+            <li class="app-appstore"><a href="#">App Store</a></li>
+            <li class="app-play"><a href="#">Google Play</a></li>
+            <li class="app-droid"><a href="#">Android</a></li>
+            <li class="app-windows"><a href="#">Windows</a></li>
+            <li class="app-chorme"><a href="#">Chorme</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Support</h4>
+          <ul>
+            <li class="app-appstore"><a href="#">App Store</a></li>
+            <li class="app-play"><a href="#">Google Play</a></li>
+            <li class="app-droid"><a href="#">Android</a></li>
+            <li class="app-windows"><a href="#">Windows</a></li>
+            <li class="app-chorme"><a href="#">Chorme</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-        <!-- endbuild -->
-</body>
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+  <!-- endbuild -->
+  </body>
 </html>

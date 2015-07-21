@@ -54,19 +54,18 @@ require.config({
     }
 });
 
-require(['jquery', 'app', 'bootstrapModal'], function ($, app) {
+
+// init demoSite setting
+require(['jquery', 'app', 'bootstrapCollapse', 'bootstrapTab'], function ($, app) {
     'use strict';
     // use app here
     console.log(app.square(16));
     // console.log(square(2));
     console.log('Running jQuery %s', $().jquery);
-    // console.log(bootstrapButton);
-    $('#myModal').modal();
 });
 
-require(['app', 'greeting'], function(app, greeting) {
+require(['app', 'greeting', 'bootstrapCarousel'], function(app, greeting) {
     'use strict';
     greeting.greeting('Hello Dev');
-    console.log('Running jQuery %s', $().jquery);
     console.log(app.square(16));
 });
