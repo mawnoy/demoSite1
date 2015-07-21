@@ -1,0 +1,30 @@
+// color plate variable.
+$default-black: #555;
+$deep-pink: #723443;
+$deep-blue: #1f2935;
+$smooth-grey: #e9e3d7;
+$pastel: #d3c4af;
+$pastel-pink: #b99aa0;
+$ovaltine: #4b3f3f;
+
+
+// theme-color
+$primary-color: $deep-pink;
+$secondary-color: $deep-blue;
+$light-color: $pastel-pink;
+$dark-color: $ovaltine;
+
+
+// Base
+$base-font-size: 14px;
+$base-font-family: 'Segoe UI', 'Segoe WP', 'Segoe Regular', sans-serif;
+$base-line-height: 1.375;
+$base-text-color: $default-black;
+
+
+// Header
+$h-font-color: $primary-color;
+
+
+// Link
+$base-link-color: $light-color;
