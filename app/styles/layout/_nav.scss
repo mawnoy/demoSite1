@@ -1,0 +1,25 @@
+//Top nav
+
+.navbar {
+  border: 0;
+}
+
+.navbar-custom {
+  background-color: $primary-color;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.22);
+  .navbar-toggle {
+    padding: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 0;
+    background-color: $light-color;
+    span {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.navbar-collapse {
+  border-top: 0;
+}

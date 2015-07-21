@@ -9,13 +9,18 @@ html {
 }
 
 body {
-  font-size: 1em;
-  font-family: $base-font-family;
-  line-height: $base-line-height;
   color: $base-text-color;
+  font-family: $base-font-family;
+  font-size: 1em;
+  line-height: $base-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $h-font-color;
 }
 
@@ -23,7 +28,8 @@ a {
   color: $base-link-color;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   padding-left: 0;
 }
