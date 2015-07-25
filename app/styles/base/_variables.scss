@@ -1,12 +1,18 @@
 // color plate variable.
+$white: #fff;
 $default-black: #555;
 $deep-pink: #723443;
+$light-pink: #94344c;
 $deep-blue: #1f2935;
 $smooth-grey: #e9e3d7;
 $pastel: #d3c4af;
+$green-apple: #589f59;
 $pastel-pink: #b99aa0;
 $pastel-blue: #cfd3d6;
 $ovaltine: #4b3f3f;
+$aquar-blue: #478f87;
+$sun-flower: #edd25d;
+$sun: #ecab39;
 
 
 // theme-color
@@ -16,14 +22,21 @@ $light-color: $pastel-pink;
 $dark-color: $ovaltine;
 
 
-// Base
+// Base typo
+$brand-font: 'Lucida Console', Monaco, monospace;
 $base-font-size: 14px;
-$base-font-family: 'Segoe UI', 'Segoe WP', 'Segoe Regular', sans-serif;
+$base-font: 'Segoe UI', 'Segoe WP', 'Segoe Regular', sans-serif;
 $base-line-height: 1.375;
 $base-text-color: $default-black;
 
+// Nav
+$navbar-color: $white;
 
-// Header
+// Button
+$toggle-btn-color: $light-color;
+$regis-btn: $aquar-blue;
+
+// Header font
 $h-font-color: $primary-color;
 
 

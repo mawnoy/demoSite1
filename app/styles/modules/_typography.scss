@@ -1,0 +1,11 @@
+.logo-text {
+  background-color: $light-pink;
+  color: $white;
+  font-family: $brand-font;
+  font-weight: 800;
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}

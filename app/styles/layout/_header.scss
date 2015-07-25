@@ -1,0 +1,51 @@
+.showcase {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &:before {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.8) 100%);
+    position: absolute;
+  }
+}
+
+.showcase-content {
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+
+  h1 {
+    // text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+    color: $sun-flower;
+
+    span {
+      font-size: 1em;
+      color: $sun-flower;
+
+      .glyphicon-heart {
+        color: $sun;
+      }
+    }
+  }
+
+  .lead {
+    font-size: 14px;
+    color: $white;
+    // text-align: justify;
+    letter-spacing: .1em;
+    line-height: 1.3;
+  }
+}

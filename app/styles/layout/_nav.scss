@@ -1,19 +1,106 @@
 //Top nav
 
+.js-hide-navbar {
+  top: -52px;
+  transition: top .5s ease;
+}
+
+.nav > li > a {
+  color: $primary-color;
+  padding-bottom: 11px;
+  padding-top: 11px;
+
+  &:hover,
+  &:focus {
+    background-color: $navbar-color;
+  }
+
+  span {
+    margin-right: 1.5rem;
+    visibility: hidden;
+  }
+}
+
+.navbar-brand {
+  padding: 10px;
+  margin: 5px;
+  height: auto;
+}
+
 .navbar {
   border: 0;
+  transition: top .5s ease;
+  // padding: 0 auto;
+
+  li {
+    // width: 100%;
+
+    &.active {
+      span {
+        visibility: visible;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    > .container {
+      .navbar-brand {
+        margin-left: 0;
+      }
+    }
+
+    li {
+      // width: 7rem;
+      border-bottom: 0;
+
+      &.active {
+        border-bottom: 4px solid lighten($light-pink, 10%);
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .btn {
+    border: 0;
+  }
+
+  .btn-regis {
+    text-decoration: underline;
+  }
+
+  .btn-login {
+    background-color: $regis-btn;
+    border-radius: 8px;
+    color: $white;
+    margin-top: .4rem;
+    padding: .5rem 2rem;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($regis-btn, 10%);
+    }
+  }
+}
+
+.navbar-header {
+  box-shadow: 0 1px 0 0 rgba($default-black, .2);
 }
 
 .navbar-custom {
-  background-color: $primary-color;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.22);
+  background-color: $navbar-color;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .22);
+
   .navbar-toggle {
-    padding: 18px;
-    margin-top: 0;
+    background-color: $white;
+    border-left: 1px solid rgba($default-black, .2);
+    border-radius: 0;
     margin-bottom: 0;
     margin-right: 0;
-    border-radius: 0;
-    background-color: $light-color;
+    margin-top: 0;
+    padding: 17px;
+
     span {
       background-color: $primary-color;
     }
