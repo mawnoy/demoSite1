@@ -1,5 +1,12 @@
 //Top nav
 
+.navbar-main {
+  span {
+    margin-right: 1.5rem;
+    visibility: hidden;
+  }
+}
+
 .js-hide-navbar {
   top: -52px;
   transition: top .5s ease;
@@ -14,31 +21,22 @@
   &:focus {
     background-color: $navbar-color;
   }
-
-  span {
-    margin-right: 1.5rem;
-    visibility: hidden;
-  }
 }
 
 .navbar-brand {
-  padding: 10px;
-  margin: 5px;
   height: auto;
+  margin: 5px;
+  padding: 10px;
 }
 
 .navbar {
   border: 0;
   transition: top .5s ease;
-  // padding: 0 auto;
 
-  li {
-    // width: 100%;
+  .active {
 
-    &.active {
-      span {
-        visibility: visible;
-      }
+    span {
+      visibility: visible;
     }
   }
 
@@ -56,6 +54,7 @@
       &.active {
         border-bottom: 4px solid lighten($light-pink, 10%);
       }
+
       span {
         display: none;
       }
