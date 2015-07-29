@@ -1,30 +1,32 @@
 'use strict';
 
-export function hideNavbar(navElem) {
+export function hideNavbar() {
 
-	var navElem = $('.navbar-custom');
-	var lastScrollTop = 0;
-	var documentElem = $(document);
+    var doc           = $(document),
+        navElem       = $('.navbar-fixed-top'),
+        lastScrollTop = 0;
 
-	documentElem.on('scroll', function() {
+    doc.on('scroll', function() {
 
-		var currentScrollTop = $(this).scrollTop();
-		var isHide = currentScrollTop > lastScrollTop ? navElem.addClass('js-hide-navbar') : navElem.removeClass('js-hide-navbar');
+        var currentScrollTop = $(this).scrollTop(),
+            isHide           = (currentScrollTop > lastScrollTop) ?
+                               navElem.addClass('js-hide-navbar')
+                               : navElem.removeClass('js-hide-navbar');
 
-		lastScrollTop = currentScrollTop;
-	});
+        lastScrollTop = currentScrollTop;
+    });
 }
 
-export function breadCum() {
+export function breadCumTracking() {
 
-	var tmpActive = $('li.active');
-	var liElem = $('.navbar-main li');
+    var currentActive = $('li.active'),
+        liElem    = $('.navbar-main li');
 
-	liElem.hover(function(){
-		liElem.removeClass('active');
-		$(this).addClass('active');
-	}, function() {
-		$(this).removeClass('active');
-		tmpActive.addClass('active');
-	});
+    liElem.hover(function(){
+        currentActive.removeClass('active');
+        $(this).addClass('active');
+    }, function() {
+        $(this).removeClass('active');
+        currentActive.addClass('active');
+    });
 }

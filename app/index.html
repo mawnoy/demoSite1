@@ -53,9 +53,9 @@
             <li><a href="blog.html"><span class="glyphicon glyphicon-triangle-right"></span>Blog</a></li>
             <li><a href="contact.html"><span class="glyphicon glyphicon-triangle-right"></span>Contact</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-sub pull-right">
-            <li><a class="btn btn-regis" href="#register">Register</a></li>
-            <li><a class="btn btn-login" href="#login">Login</a></li>
+          <ul class="nav navbar-nav navbar-sub pull-right text-right">
+            <li><a class="regis-link" href="#register">Register</a></li>
+            <li><a class="btn btn-login" href="#login" data-toggle="modal" data-target="#myModal">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -80,8 +80,9 @@
         <div class="col-md-6 col-md-offset-3">
           <form class="search">
             <div>
-              <input type="search" placeholder="Search our website product">
-              <button class="btn btn-success" type="submit">Search</button>
+              <input class="search-bar" id="auto-search" type="search" list="json-datalist" placeholder="Search our website product">
+              <datalist id="json-datalist"></datalist>
+              <button class="btn btn-search"><span class="glyphicon glyphicon-search"></span></button>
             </div>
           </form>
         </div>
@@ -224,6 +225,37 @@
     </div>
   </footer>
 
+  <!-- Login Modal -->
+  <div class="modal modal-login fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Login</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12">
+              <form class="login-form" method="post">
+                <input type="text" placeholder="Email or Username">
+                <input type="password" placeholder="Password">
+              </form>
+              <div class="forget-user">
+                <a href="#">Forget yout password?</a>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-wrap">
+                <button class="btn btn-default btn-sign-in">Sign in</button>
+                <button class="btn btn-fb">Facebook</button>
+                <button class="btn btn-twitter">Twitter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>

@@ -38,15 +38,6 @@ module.exports = function (grunt) {
                     dest: '.tmp/scripts',
                     ext: '.js'
                 }]
-            },
-            test: {
-                files: [{
-                    expand: true,
-                    cwd: 'test/spec',
-                    src: '{,*/}*.js',
-                    dest: '.tmp/spec',
-                    ext: '.js'
-                }]
             }
         },
         // Watches files for changes and runs tasks based on the changed files

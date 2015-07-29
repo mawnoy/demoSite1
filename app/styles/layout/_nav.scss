@@ -1,5 +1,21 @@
 //Top nav
 
+.navbar-sub {
+  li {
+    display: inline-block;
+  }
+
+  width: 100%;
+  border-top: 1px solid rgba($default-black, .1);
+  margin-right: 1px;
+
+  @media (min-width: 768px) {
+    width: auto;
+    border-top: 0;
+    margin-right: 0;
+  }
+}
+
 .navbar-main {
   span {
     margin-right: 1.5rem;
@@ -65,20 +81,19 @@
     border: 0;
   }
 
-  .btn-regis {
-    text-decoration: underline;
-  }
-
   .btn-login {
     background-color: $regis-btn;
-    border-radius: 8px;
-    color: $white;
+    border: 1px solid rgba($default-black, .2);
+    border-radius: 0;
+    color: $primary-color;
     margin-top: .4rem;
     padding: .5rem 2rem;
 
     &:hover,
     &:focus {
-      background-color: lighten($regis-btn, 10%);
+      background-color: darken($regis-btn, 3%);
+      color: lighten($primary-color, 10%);
+      outline: none;
     }
   }
 }
@@ -90,6 +105,10 @@
 .navbar-custom {
   background-color: $navbar-color;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .22);
+
+  // .modal-open & {
+  //   padding-right: 13px;
+  // }
 
   .navbar-toggle {
     background-color: $white;
@@ -108,4 +127,9 @@
 
 .navbar-collapse {
   border-top: 0;
+}
+
+.regis-link {
+  margin-top: 4px;
+  text-decoration: underline;
 }

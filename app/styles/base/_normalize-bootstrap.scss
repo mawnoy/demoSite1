@@ -1,7 +1,22 @@
 // overwrite bootstrap class
 
+input[type="search"] {
+  border: 1px solid rgba($default-black, .1);
+  padding: .8rem 1.5rem;
+  width: 100%;
+}
+
+.btn,
+.btn-default {
+  &:focus,
+  &:active:focus {
+    outline: none;
+  }
+}
+
 .page-header {
   border-color: $primary-color;
+  font-weight: 600px;
   margin-bottom: 1.5rem;
   margin-top: 5rem;
 }

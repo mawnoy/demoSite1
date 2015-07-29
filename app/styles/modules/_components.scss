@@ -1,5 +1,43 @@
 // overwrite bootstrap class
 
-.page-header {
-  font-weight: 600px;
+.search-bar {
+  float: left;
+
+  &:focus {
+    border: 1px solid $primary-color;
+    box-shadow: 0 0 2px $primary-color;
+  }
+}
+
+
+.modal-login {
+
+  &.in {
+    .modal-dialog {
+      transform: translate(0, 8%);
+    }
+  }
+
+  .modal-body {
+    padding: 2.5rem;
+  }
+
+  .modal-dialog {
+    margin: 30px auto;
+    max-width: 300px;
+  }
+
+  input {
+    height: 2.5rem;
+    letter-spacing: .1em;
+    margin-bottom: .5rem;
+    padding: .1rem .6rem;
+    width: 100%;
+  }
+
+  .forget-user {
+    font-size: .8em;
+    text-align: right;
+  }
+
 }

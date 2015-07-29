@@ -1,72 +1,88 @@
 require.config({
-	paths: {
-		jquery: '../bower_components/jquery/jquery',
-		bootstrapAffix: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix',
-		bootstrapAlert: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert',
-		bootstrapButton: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button',
-		bootstrapCarousel: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel',
-		bootstrapCollapse: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse',
-		bootstrapDropdown: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown',
-		bootstrapModal: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal',
-		bootstrapPopover: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover',
-		bootstrapScrollspy: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy',
-		bootstrapTab: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab',
-		bootstrapTooltip: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip',
-		bootstrapTransition: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition'
-	},
-	shim: {
-		bootstrapAffix: {
-			deps: ['jquery']
-		},
-		bootstrapAlert: {
-			deps: ['jquery', 'bootstrapTransition']
-		},
-		bootstrapButton: {
-			deps: ['jquery']
-		},
-		bootstrapCarousel: {
-			deps: ['jquery', 'bootstrapTransition']
-		},
-		bootstrapCollapse: {
-			deps: ['jquery', 'bootstrapTransition']
-		},
-		bootstrapDropdown: {
-			deps: ['jquery']
-		},
-		bootstrapModal:{
-			deps: ['jquery', 'bootstrapTransition']
-		},
-		bootstrapPopover: {
-			deps: ['jquery', 'bootstrapTooltip']
-		},
-		bootstrapScrollspy: {
-			deps: ['jquery']
-		},
-		bootstrapTab: {
-			deps: ['jquery', 'bootstrapTransition']
-		},
-		bootstrapTooltip: {
-			deps: ['jquery', 'bootstrapTransition']
-		},
-		bootstrapTransition: {
-			deps: ['jquery']
-		}
-	}
+    paths: {
+        jquery: '../bower_components/jquery/jquery',
+        bootstrapAffix: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix',
+        bootstrapAlert: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert',
+        bootstrapButton: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button',
+        bootstrapCarousel: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel',
+        bootstrapCollapse: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse',
+        bootstrapDropdown: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown',
+        bootstrapModal: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal',
+        bootstrapPopover: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover',
+        bootstrapScrollspy: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy',
+        bootstrapTab: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab',
+        bootstrapTooltip: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip',
+        bootstrapTransition: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition'
+    },
+    shim: {
+        bootstrapAffix: {
+            deps: ['jquery']
+        },
+        bootstrapAlert: {
+            deps: ['jquery', 'bootstrapTransition']
+        },
+        bootstrapButton: {
+            deps: ['jquery']
+        },
+        bootstrapCarousel: {
+            deps: ['jquery', 'bootstrapTransition']
+        },
+        bootstrapCollapse: {
+            deps: ['jquery', 'bootstrapTransition']
+        },
+        bootstrapDropdown: {
+            deps: ['jquery']
+        },
+        bootstrapModal:{
+            deps: ['jquery', 'bootstrapTransition']
+        },
+        bootstrapPopover: {
+            deps: ['jquery', 'bootstrapTooltip']
+        },
+        bootstrapScrollspy: {
+            deps: ['jquery']
+        },
+        bootstrapTab: {
+            deps: ['jquery', 'bootstrapTransition']
+        },
+        bootstrapTooltip: {
+            deps: ['jquery', 'bootstrapTransition']
+        },
+        bootstrapTransition: {
+            deps: ['jquery']
+        }
+    }
 });
 
 
-// bootstrap module loading.
-require(['bootstrapCollapse', 'bootstrapTab', 'bootstrapCarousel'], function () {
-	'use strict';
-	console.log('start bootstrap plugin');
+
+// Bootstrap module init.
+require(['bootstrapCollapse', 'bootstrapTab', 'bootstrapCarousel', 'bootstrapModal'], function () {
+    'use strict';
+
+    //login modal on click.
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus();
+    });
+
+    console.log('start Bootstrap plugin');
 });
 
-// nav setting.
+// Navigation setting.
 require(['jquery', 'nav'], function($, nav) {
-	'use strict';
+    'use strict';
 
-	nav.hideNavbar();
-	nav.breadCum();
+    nav.hideNavbar();
+    nav.breadCumTracking();
 
-	console.log('start Nav plugin');
+    console.log('start Nav plugin');
+});
+
+// Search form
+require(['search'], function(search) {
+    'use strict';
+
+    search.autoComplete();
+
+    console.log('start search plugin');
 });
