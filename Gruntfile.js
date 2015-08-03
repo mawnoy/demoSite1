@@ -410,6 +410,9 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-mocha');
+
+    grunt.registerTask('default', ['mocha']);
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {

@@ -1,28 +1,34 @@
 'use strict';
+// import * as help from "help";
 
-export function hideNavbar() {
+export function hidingOnScrollDown(prop) {
 
-    var doc           = $(document),
-        navElem       = $('.navbar-fixed-top'),
-        lastScrollTop = 0;
+    prop = prop || {};
+
+    const doc = $(document);            // elem to scroll
+
+    var navbar = prop.navbar,
+        jsClass = prop.jsClass || 'js-hide-navbar',     // default class name to toggle
+        lastScroll = 0;
 
     doc.on('scroll', function() {
 
-        var currentScrollTop = $(this).scrollTop(),
-            isHide           = (currentScrollTop > lastScrollTop) ?
-                               navElem.addClass('js-hide-navbar')
-                               : navElem.removeClass('js-hide-navbar');
+        var curScroll = doc.scrollTop(),
 
-        lastScrollTop = currentScrollTop;
+            direction = (curScroll > lastScroll) ?
+            navbar.addClass(jsClass) :
+            navbar.removeClass(jsClass);
+
+        lastScroll = curScroll;
     });
 }
 
-export function breadCumTracking() {
+export function breadCumTracking(elemTack) {
 
-    var currentActive = $('li.active'),
-        liElem    = $('.navbar-main li');
+    var currentActive = $('li.active');
 
-    liElem.hover(function(){
+
+    elemTack.hover(function(){
         currentActive.removeClass('active');
         $(this).addClass('active');
     }, function() {

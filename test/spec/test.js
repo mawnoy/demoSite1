@@ -1,14 +1,13 @@
-(function () {
-  'use strict';
+// (function () {
+//     'use strict';
 
+//     describe('Navbar', function() {
+//         describe('#findScrollDirection()', function () {
+//             it('should return true when scrolldown current > previous', function () {
+//                 assert.equal('down', findScrollDirection(0, 1));
+//                 assert.equal('up', findScrollDirection(10, 9));
+//             });
+//         });
+//     });
 
-    describe('Array', function() {
-      describe('#indexOf()', function () {
-        it('should return -1 when the value is not present', function () {
-          assert.equal(-1, [1,2,3].indexOf(5));
-          assert.equal(-1, [1,2,3].indexOf(0));
-        });
-      });
-    });
-
-})();
+// })();

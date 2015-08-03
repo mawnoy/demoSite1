@@ -56,7 +56,7 @@ require.config({
 
 
 
-// Bootstrap module init.
+// Bootstrap module controller
 require(['bootstrapCollapse', 'bootstrapTab', 'bootstrapCarousel', 'bootstrapModal'], function () {
     'use strict';
 
@@ -68,17 +68,24 @@ require(['bootstrapCollapse', 'bootstrapTab', 'bootstrapCarousel', 'bootstrapMod
     console.log('start Bootstrap plugin');
 });
 
-// Navigation setting.
+// Navigation controller.
 require(['jquery', 'nav'], function($, nav) {
     'use strict';
 
-    nav.hideNavbar();
-    nav.breadCumTracking();
+    var navbar = $('.navbar-fixed-top'),       // top navbar
+        elemTrack = $('.navbar-main li');        // li in top-navbar
 
-    console.log('start Nav plugin');
+    nav.hidingOnScrollDown({
+        navbar: navbar,
+        jsClass: 'js-hide-navbar'
+    });
+
+    nav.breadCumTracking(elemTrack);
+
+    // console.log('start Nav plugin');
 });
 
-// Search form
+// Search form controller
 require(['search'], function(search) {
     'use strict';
 

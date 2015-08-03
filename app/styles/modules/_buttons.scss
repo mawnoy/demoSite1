@@ -1,12 +1,25 @@
+.btn-hook {
+  margin-top: 2rem;
+  background-color: darken($light-grey, 2%);
+  border: 1px solid darken($light-grey, 20%);
+  border-radius: 50px;
+  width: 80%;
+  color: darken($light-grey, 50%);
+  &:hover, &:focus {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
 .btn-search {
   background-color: $primary-color;
   border: 0;
   border-radius: 0;
   color: rgba($white, .8);
-  position: absolute;
   top: 1px;
+  position: absolute;
   right: 16px;
-  padding: .78rem 1rem;
+  padding: .87rem 1rem;
 
   &:hover {
     background-color: lighten($primary-color, 5%);
@@ -42,8 +55,8 @@
   width: 100%;
 
   &:not(:first-child) {
-    margin-top: .5rem;
     color: $white;
+    margin-top: .5rem;
   }
 }
 

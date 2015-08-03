@@ -1,0 +1,51 @@
+.icon {
+  background-color: $light-grey;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid darken($light-grey, 10%);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 3rem;
+}
+
+.icon-md {
+  background-size: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.icon-sm {
+  background-size: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.icon-sass {
+  background-image: url('../images/sass.svg');
+}
+
+.icon-css3 {
+  background-image: url('../images/css3.png');
+}
+
+.icon-html5 {
+  background-image: url('../images/html5.png');
+}
+
+.icon-fast {
+  background-image: url('../images/fast.png');
+}
+
+.icon-optimize {
+  background-image: url('../images/optimize.png');
+}
+
+.icon-responsive {
+  background-image: url('../images/responsive.png');
+}
+
+
+.icon-jquery {
+  background-image: url('../images/jquery.png');
+  background-size: 80px;
+}
