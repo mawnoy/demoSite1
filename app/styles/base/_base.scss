@@ -36,8 +36,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: monospace;
   color: $h-font-color;
+  font-family: monospace;
+  font-weight: 800;
 }
 
 a {

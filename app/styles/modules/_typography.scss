@@ -1,6 +1,16 @@
+.silence {
+  color: rgba($white, .8);
+  font-weight: 300;
+}
+
+.heart {
+  color: $hearth;
+}
+
 h3 {
   padding-bottom: 1.3rem;
   position: relative;
+
   &:after {
     background-color: rgba($primary-color, .4);
     bottom: 0;
@@ -14,7 +24,7 @@ h3 {
 }
 
 .logo-text {
-  background-color: $light-pink;
+  background-color: $pear;
   color: $white;
   font-family: $brand-font;
   font-weight: 800;

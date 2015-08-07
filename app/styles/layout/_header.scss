@@ -1,9 +1,49 @@
+
+.section-primary-a {
+  background-color: $pear;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+
+  .shape-pattern {
+    width: 1200px;
+    height: 400px;
+    background-color: lighten($pear, 10%);
+    position: absolute;
+    top: -250px;
+    left: -100px;
+    transform: rotate(10deg);
+    box-shadow: 1px 1px 5px 1px darken($pear, 15%);
+
+    &:after {
+      background-color: darken($pear, 15%);
+      box-shadow: inset 1px 1px 5px 1px darken($pear, 20%);
+      content: '';
+      display: block;
+      height: 500px;
+      right: -550px;
+      position: absolute;
+      width: 500px;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-style: italic;
+    strong {
+      font-size: 1.5em;
+    }
+  }
+}
+
 .showcase {
-  backface-visibility: hidden;
   background-image: url('../images/bg-sm.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  backface-visibility: hidden;
   display: block;
   height: 100vh;
   transform: translate3d(0, 0, 0);
@@ -42,7 +82,7 @@
   }
 
   .heart {
-    color: $heart;
+    color: $hearth;
   }
 
   .lead {
@@ -51,8 +91,8 @@
     font-size: 14px;
     letter-spacing: .1em;
     line-height: 1.3;
-    margin-top: 5em;
     margin-left: 20%;
+    margin-top: 5em;
     padding: 2rem;
     text-align: left;
     width: 60%;

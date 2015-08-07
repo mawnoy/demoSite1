@@ -1,5 +1,52 @@
 // overwrite bootstrap class
 
+.post {
+  margin-bottom: 2rem;
+  padding: 1.8rem;
+  background-color: rgba(#eee, .6);
+  border: 1px solid #aaa;
+}
+
+.push-right {
+  float: right;
+}
+
+.sec-header {
+  background-color: $pear;
+  color: $white;
+  padding: 1rem;
+  width: 15rem;
+}
+
+.list {
+  padding: 1rem;
+  margin-bottom: .5rem;
+}
+
+.sidebar {
+  .list-features {
+    padding: 1.2rem;
+    li {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+  }
+}
+
+.side-header {
+  padding: .5rem;
+  background-color: $pear;
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.block {
+  margin-top: 3rem;
+}
+
 .search-bar {
   float: left;
 

@@ -1,4 +1,9 @@
 // color plate variable.
+
+$jquery: #091524;
+$sass: #cf649a;
+$html5: #e44d26;
+$css3: #0170ba;
 $white: #fff;
 $default-black: #555;
 $deep-pink: #723443;
@@ -17,10 +22,13 @@ $sun-flower: #edd25d;
 $sun: #ecab39;
 $fb-color: #3b5999;
 $twitter-color: #55acef;
-$heart: #ab1a1a;
 $light-grey: #f8f8f8;
 $grey: #7c7c7c;
 $default-grey: #eee;
+$apple: #e75272;
+$pink: #e75272;
+$pear: #c23557;
+$hearth: #fb0e47;
 
 
 // theme-color
@@ -45,7 +53,7 @@ $toggle-btn-color: $light-color;
 $regis-btn: $white;
 
 // Header font
-$h-font-color: $primary-color;
+$h-font-color: darken($default-black, 20%);
 
 
 // Link

@@ -1,5 +1,39 @@
 // overwrite bootstrap class
 
+.tab-content {
+  p {
+    padding-top: 1.2rem;
+  }
+}
+
+.form-group {
+  button {
+    margin-top: 2rem;
+    width: 200px;
+  }
+}
+
+#accordion {
+  .panel-heading {
+    color: $white;
+    background-color: $pear;
+    a{
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+}
+
+.glyphicon-star {
+  color: $sun;
+}
+
+.glyphicon {
+  margin-right: .3rem;
+}
+
 input[type="search"] {
   border: 1px solid rgba($default-black, .1);
   padding: .8rem 1.5rem;

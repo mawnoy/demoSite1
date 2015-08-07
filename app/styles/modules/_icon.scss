@@ -15,21 +15,53 @@
 }
 
 .icon-sm {
+  transition: border-color 1s ease;
   background-size: 50px;
+  border-width: 5px;
   height: 100px;
   width: 100px;
 }
 
+.icon-xs {
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-fb {
+  background-image: url('../images/fb.png');
+}
+
+.icon-youtube {
+  background-image: url('../images/youtube.png');
+}
+
+.icon-dribbble {
+  background-image: url('../images/dribbble.png');
+}
+
 .icon-sass {
   background-image: url('../images/sass.svg');
+
+  &:hover {
+    border-color: $sass;
+  }
 }
 
 .icon-css3 {
   background-image: url('../images/css3.png');
+
+  &:hover {
+    border-color: $css3;
+  }
 }
 
 .icon-html5 {
   background-image: url('../images/html5.png');
+
+  &:hover {
+    border-color: $html5;
+  }
 }
 
 .icon-fast {
@@ -48,4 +80,8 @@
 .icon-jquery {
   background-image: url('../images/jquery.png');
   background-size: 80px;
+
+  &:hover {
+    border-color: $jquery;
+  }
 }

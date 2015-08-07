@@ -1,5 +1,6 @@
+ /*jshint unused:false*/
+
 'use strict';
-// import * as help from "help";
 
 export function hidingOnScrollDown(prop) {
 

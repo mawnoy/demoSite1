@@ -13,10 +13,10 @@
 
     <title>demoSite1 | Theme</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'>
+    <link rel="stylesheet" href="bower_components/WOW/css/libs/animate.css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -65,16 +65,17 @@
   <section class="showcase">
     <div class="container showcase-content">
       <!-- <div class="overlay"></div> -->
-      <h1><span class="small">DEMO</span><span class="heart">♥</span><br>THEME</h1>
-      <p class="lead hidden-xs">Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipisicing elit. Nulla perspiciatis ipsa quos deleniti sapiente. Unde beatae nam ea modi, facilis.</p>
+      <div class="wow bounceInUp">
+        <h1><span class="small">DEMO</span><span class="heart">♥</span><br>THEME</h1>
+      </div>
       <div class="btn-wrap">
-        <a class="btn btn-flat" href="#" role="button">DOWNLOAD</a>
-        <a class="btn btn-flat" href="#" role="button">APPSTORE</a>
+        <a class="btn btn-download" href="#" role="button">DOWNLOAD</a>
+        <a class="btn btn-download" href="#" role="button">APPSTORE</a>
       </div>
     </div>
   </section><!-- /.show-case -->
 
-  <section class="section-light">
+  <section class="sec section-light">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -95,22 +96,22 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="block block-primary text-center">
-            <h3><span class="icon icon-fast icon-md"></span> Fast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim</p>
+            <h3><span class="wow bounce icon icon-fast icon-md" data-wow-delay="0.5s"></span>Fast</h3>
+            <p class="wow fadeIn" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim</p>
             <a class="btn btn-hook" href="#">Read more</a>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="block block-secondary text-center">
-            <h3><span class="icon icon-responsive icon-md"></span> Responsive</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim</p>
+            <h3><span class="wow bounce icon icon-responsive icon-md" data-wow-delay="1s"></span>Responsive</h3>
+            <p class="wow fadeIn" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim</p>
             <a class="btn btn-hook" href="#">Read more</a>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="block block-primary text-center">
-            <h3><span class="icon icon-optimize icon-md"></span> Optimize</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim</p>
+            <h3><span class="wow bounce icon icon-optimize icon-md" data-wow-delay="1.5s"></span>Optimize</h3>
+            <p class="wow fadeIn" data-wow-delay="1.5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim</p>
             <a class="btn btn-hook" href="#">Read more</a>
           </div>
         </div>
@@ -122,28 +123,28 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
-          <div class="block block-light text-center">
+          <div class="wow fadeIn block block-light text-center" data-wow-delay="0.5s">
             <span class="icon icon-html5 icon-sm"></span>
             <h3>HTML5</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="block block-light text-center">
+          <div class="wow fadeIn block block-light text-center" data-wow-delay="1s">
             <span class="icon icon-css3 icon-sm"></span>
             <h3>CSS3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="block block-light text-center">
+          <div class="wow fadeIn block block-light text-center" data-wow-delay="1.5s">
             <span class="icon icon-sass icon-sm"></span>
             <h3>Sass</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="block block-light text-center">
+          <div class="wow fadeIn block block-light text-center" data-wow-delay="2s">
             <span class="icon icon-jquery icon-sm"></span>
             <h3>jQuery</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
@@ -153,75 +154,98 @@
     </div>
   </section><!-- /.section -->
 
-  <section class="section-light">
+  <section class="sec section-primary">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h2 class="page-header">Use <span class="em-primary">demo site on All devices</span></h2>
+        <div class="col-sm-4">
+          <h2 class="page-header"><strong>Use</strong><br><span class="em-primary">on All devices</span></h2>
           <ul class="list list-features">
             <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
             <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
             <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
             <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
           </ul>
-          <a class="btn btn-primary" href="#">Read more</a>
         </div>
-        <div class="col-md-6">
-          <img class="devices" src="images/devices.png" width="70%"></img>
+        <div class="wow bounceInRight col-sm-8">
+          <img class="devices" src="images/devices.png" width="100%"></img>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-primary">
+  <section class="sec section-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <img class="devices" src="images/device-iphone.png"></img>
+        <div class="col-sm-4">
+          <img class="devices wow bounceInLeft" src="images/device-iphone.png" width="100%"></img>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-8">
           <h2 class="page-header">Try this Demo site For 30 days FREE!</h2>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aliquam libero, odio corporis, natus quas!</p>
-          <a class="btn btn-default btn-round btn-lg" href="#">Download This</a>
+          <a class="btn btn-download btn-lg" href="#"><span class="glyphicon glyphicon-circle-arrow-down"></span>Download This</a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Get Demo site</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>About</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Support</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
+  <footer>
+    <div class="sec-contact text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="email"><span class="glyphicon glyphicon-envelope"></span>Fisaul.Jeaumar@gmail.com</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="tel"><span class="glyphicon glyphicon-earphone"></span>087-7174080</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="social">
+              <a href="/"><span class="icon icon-fb icon-xs"></span></a>
+              <a href="/"><span class="icon icon-youtube icon-xs"></span></a>
+              <a href="/"><span class="icon icon-dribbble icon-xs"></span></a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="sec footer-main text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Get Demo site</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>About</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Support</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-secondary text-center">
+        <small>Made with <span class="heart">♥</span> by Fisaul Jeaumar</small>
     </div>
   </footer>
 

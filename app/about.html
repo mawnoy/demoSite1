@@ -12,6 +12,7 @@
     <meta name="author" content="">
 
     <title>demoSite1 | About</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
@@ -25,6 +26,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/WOW/css/libs/animate.css">
 
   </head>
   <body>
@@ -43,51 +45,37 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">demoSite1</a>
+          <a class="navbar-brand logo-text" href="#">DEMO | SITE</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="nav navbar-nav navbar-main">
+            <li><a href="index.html"><span class="glyphicon glyphicon-triangle-right"></span>Home</a></li>
+            <li class="active"><a href="about.html"><span class="glyphicon glyphicon-triangle-right"></span>About</a></li>
+            <li><a href="services.html"><span class="glyphicon glyphicon-triangle-right"></span>Services</a></li>
+            <li><a href="blog.html"><span class="glyphicon glyphicon-triangle-right"></span>Blog</a></li>
+            <li><a href="contact.html"><span class="glyphicon glyphicon-triangle-right"></span>Contact</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-sub pull-right">
-            <li><a href="#register">Register</a></li>
-            <li><a href="#login">Login</a></li>
+          <ul class="nav navbar-nav navbar-sub pull-right text-right">
+            <li><a class="regis-link" href="#register">Register</a></li>
+            <li><a class="btn btn-login" href="#login" data-toggle="modal" data-target="#myModal">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
   </header>
 
-  <section class="section-light top-inner">
+  <section class="sec section-primary-a">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form class="search">
-            <div>
-              <input type="search" placeholder="Search our website product">
-              <button class="btn btn-success" type="submit">Search</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section><!-- /.section-light -->
-
-  <section class="section-primary-a">
-    <div class="container">
-      <div class="row">
+      <div class="shape-pattern"></div>
         <div class="col-md-12">
-          <h2>Building technology to sharp our future</h2>
+          <h2><strong>Building technology</strong><br><span class="silence">to sharp our future</span></h2>
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- /.section-primary-a -->
 
-  <section class="section-main">
+  <section class="sec section-main">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
@@ -102,19 +90,19 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="images/img1.jpg" alt="img1">
+                <img src="images/img1.jpg" alt="img1" width="100%">
                 <div class="carousel-caption">
                   ...
                 </div>
               </div>
               <div class="item">
-                <img src="images/img2.jpg" alt="img2">
+                <img src="images/img2.jpg" alt="img2" width="100%">
                 <div class="carousel-caption">
                   ...
                 </div>
               </div>
               <div class="item">
-                <img src="images/img3.jpg" alt="img3">
+                <img src="images/img3.jpg" alt="img3" width="100%">
                 <div class="carousel-caption">
                   ...
                 </div>
@@ -134,11 +122,12 @@
 
           <h2 class="page-header">About</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil maxime fugit delectus quidem quam necessitatibus, qui explicabo odio deleniti ut nesciunt ratione perferendis veniam hic.</p>
-          <p>necessitatibus, qui explicabo odio deleniti ut nesciunt ratione perferendis veniam hic.</p>
+          <p>necessitatibus, qui explicabo odio deleniti ut nesciunt ratione perferendis veniam hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, obcaecati facilis asperiores, ratione a mollitia.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis porro delectus rerum aliquam, repellendus cum, tempore esse quaerat nobis facilis aperiam ad eos, molestiae quia libero nihil. Harum autem, quia soluta, voluptatibus eveniet nemo error minima, quae cum, voluptas ea. Quam aperiam beatae, accusantium qui a inventore excepturi corrupti impedit.</p>
 
         </div>
-        <div class="col-md-4">
-          <h2 class="page-header">Lorem ipsum.</h2>
+        <div class="col-md-4 sidebar">
+          <h2 class="page-header side-header">SIDEBAR</h2>
           <ul class="list list-features">
             <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
             <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
@@ -194,34 +183,34 @@
     </div>
   </section>
 
-  <section>
+  <section class="sec section-staff">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="block block-light block-image text-center"></div>
-          <img src="images/headshot1.jpg">
+          <img class="icon icon-md" src="images/headshot1.jpg">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, eos!</p>
         </div>
         <div class="col-md-3">
           <div class="block block-image text-center"></div>
-          <img src="images/headshot2.jpg">
+          <img class="icon icon-md" src="images/headshot2.jpg">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, eos!</p>
         </div>
         <div class="col-md-3">
           <div class="block block-light block-image text-center"></div>
-          <img src="images/headshot3.jpg">
+          <img class="icon icon-md" src="images/headshot3.jpg">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, eos!</p>
         </div>
         <div class="col-md-3">
           <div class="block block-image text-center"></div>
-          <img src="images/headshot4.jpg">
+          <img class="icon icon-md" src="images/headshot4.jpg">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, eos!</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="sec">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -234,140 +223,98 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="block block-primary">
-            <h3><span class="glyphicon glyphicon-check"></span> Sleek</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim eum</p>
-            <a class="btn btn-default" href="#">Read more</a>
+  <footer>
+    <div class="sec-contact text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="email"><span class="glyphicon glyphicon-envelope"></span>Fisaul.Jeaumar@gmail.com</div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block block-secondary">
-            <h3><span class="glyphicon glyphicon-check"></span> Responsive</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim eum</p>
-            <a class="btn btn-default" href="#">Read more</a>
+          <div class="col-sm-4">
+            <div class="tel"><span class="glyphicon glyphicon-earphone"></span>087-7174080</div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block block-primary">
-            <h3><span class="glyphicon glyphicon-check"></span> Clean</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt dignissimos pariatur facilis porro doloremque placeat tempore enim eum</p>
-            <a class="btn btn-default" href="#">Read more</a>
+          <div class="col-sm-4">
+            <div class="social">
+              <a href="/"><span class="icon icon-fb icon-xs"></span></a>
+              <a href="/"><span class="icon icon-youtube icon-xs"></span></a>
+              <a href="/"><span class="icon icon-dribbble icon-xs"></span></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="block block-light text-center">
-            <span class="glyphicon glyphicon-star"></span>
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+    <div class="sec footer-main text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Get Demo site</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="block block-light text-center">
-            <span class="glyphicon glyphicon-education"></span>
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+          <div class="col-sm-4">
+            <h4>About</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="block block-light text-center">
-            <span class="glyphicon glyphicon-grain"></span>
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="block block-light text-center">
-            <span class="glyphicon glyphicon-phone-alt"></span>
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, cum.</p>
+          <div class="col-sm-4">
+            <h4>Support</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section><!-- /.section -->
-
-  <section class="section-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="page-header">Use <span class="em-primary">demo site on All devices</span></h2>
-          <ul class="list list-features">
-            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
-            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
-            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
-            <li><span class="glyphicon glyphicon-ok"></span>Lorem ipsum dolor.</li>
-          </ul>
-          <a class="btn btn-primary" href="#">Read more</a>
-        </div>
-        <div class="col-md-6">
-          <img class="devices" src="images/devices.png" width="70%"></img>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="devices" src="images/device-iphone.png"></img>
-        </div>
-        <div class="col-md-6">
-          <h2 class="page-header">Try this Demo site For 30 days FREE!</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aliquam libero, odio corporis, natus quas!</p>
-          <a class="btn btn-default btn-round btn-lg" href="#">Download This</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Get Demo site</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>About</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Support</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="footer-secondary text-center">
+        <small>Made with <span class="heart">♥</span> by Fisaul Jeaumar</small>
     </div>
   </footer>
+
+  <!-- Login Modal -->
+  <div class="modal modal-login fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Login</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12">
+              <form class="login-form" method="post">
+                <input type="text" placeholder="Email or Username">
+                <input type="password" placeholder="Password">
+              </form>
+              <div class="forget-user">
+                <a href="#">Forget yout password?</a>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-wrap">
+                <button class="btn btn-default btn-sign-in">Sign in</button>
+                <button class="btn btn-fb">Facebook</button>
+                <button class="btn btn-twitter">Twitter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 
   <!-- build:js({app,.tmp}) scripts/main.js -->

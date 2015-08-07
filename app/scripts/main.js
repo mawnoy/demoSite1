@@ -1,6 +1,7 @@
 require.config({
     paths: {
         jquery: '../bower_components/jquery/jquery',
+        wow: '../bower_components/WOW/wow',
         bootstrapAffix: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix',
         bootstrapAlert: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert',
         bootstrapButton: '../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button',
@@ -57,8 +58,11 @@ require.config({
 
 
 // Bootstrap module controller
-require(['bootstrapCollapse', 'bootstrapTab', 'bootstrapCarousel', 'bootstrapModal'], function () {
+require(['wow', 'bootstrapCollapse', 'bootstrapTab', 'bootstrapCarousel', 'bootstrapModal'], function (wow) {
     'use strict';
+
+    // Init Wow animation
+    new WOW().init();
 
     //login modal on click.
     $('#myModal').on('shown.bs.modal', function () {
@@ -85,7 +89,7 @@ require(['jquery', 'nav'], function($, nav) {
     // console.log('start Nav plugin');
 });
 
-// Search form controller
+// Search controller
 require(['search'], function(search) {
     'use strict';
 

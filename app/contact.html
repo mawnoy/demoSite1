@@ -12,6 +12,7 @@
     <meta name="author" content="">
 
     <title>demoSite1 | About</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
@@ -25,6 +26,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/WOW/css/libs/animate.css">
 
   </head>
   <body>
@@ -43,45 +45,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">demoSite1</a>
+          <a class="navbar-brand logo-text" href="#">DEMO | SITE</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="nav navbar-nav navbar-main">
+            <li><a href="index.html"><span class="glyphicon glyphicon-triangle-right"></span>Home</a></li>
+            <li><a href="about.html"><span class="glyphicon glyphicon-triangle-right"></span>About</a></li>
+            <li><a href="services.html"><span class="glyphicon glyphicon-triangle-right"></span>Services</a></li>
+            <li><a href="blog.html"><span class="glyphicon glyphicon-triangle-right"></span>Blog</a></li>
+            <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-triangle-right"></span>Contact</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-sub pull-right">
-            <li><a href="#register">Register</a></li>
-            <li><a href="#login">Login</a></li>
+          <ul class="nav navbar-nav navbar-sub pull-right text-right">
+            <li><a class="regis-link" href="#register">Register</a></li>
+            <li><a class="btn btn-login" href="#login" data-toggle="modal" data-target="#myModal">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-  </header><!-- /.header-main -->
+  </header>
 
-  <section class="section-light top-inner">
+  <section class="sec section-primary-a">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form class="search">
-            <div>
-              <input type="search" placeholder="Search our website product">
-              <button class="btn btn-success" type="submit">Search</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section><!-- /.section-light -->
-
-  <section class="section-primary-a">
-    <div class="container">
-      <div class="row">
+      <div class="shape-pattern"></div>
         <div class="col-md-12">
-          <h2>Building Technology to sharp future</h2>
+          <h2><strong>Building technology</strong><br><span class="silence">to sharp our future</span></h2>
         </div>
       </div>
     </div>
@@ -91,11 +79,10 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3785658732154!2d100.61800564999999!3d13.7560296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e1e6d77de73%3A0xafc4658f6317648e!2sRamkhamhaeng+University!5e0!3m2!1sen!2s!4v1437469882082" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 
-  <section class="section-main">
+  <section class="sec section-main">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h2 class="page-header">Contact US</h2>
           <form role="form">
             <div class="form-group">
               <label for="name">Name</label>
@@ -117,7 +104,7 @@
           </form>
         </div><!-- /.col-md-8 -->
         <div class="col-md-4">
-          <div class="block block-primary-head no-pad">
+          <div class="text-center block block-primary-head no-pad">
             <h3><span class="glyphicon glyphicon-home"></span>Our Location</h3>
             <address class="block-content list-location">
               <h4>Demosite</h4>
@@ -138,42 +125,98 @@
     </div>
   </section><!-- /.section-primary -->
 
-  <footer class="footer-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Get Demo site</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>About</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Support</h4>
-          <ul>
-            <li class="app-appstore"><a href="#">App Store</a></li>
-            <li class="app-play"><a href="#">Google Play</a></li>
-            <li class="app-droid"><a href="#">Android</a></li>
-            <li class="app-windows"><a href="#">Windows</a></li>
-            <li class="app-chorme"><a href="#">Chorme</a></li>
-          </ul>
+  <footer>
+    <div class="sec-contact text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="email"><span class="glyphicon glyphicon-envelope"></span>Fisaul.Jeaumar@gmail.com</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="tel"><span class="glyphicon glyphicon-earphone"></span>087-7174080</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="social">
+              <a href="/"><span class="icon icon-fb icon-xs"></span></a>
+              <a href="/"><span class="icon icon-youtube icon-xs"></span></a>
+              <a href="/"><span class="icon icon-dribbble icon-xs"></span></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer><!-- /.footer-main -->
+    <div class="sec footer-main text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Get Demo site</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>About</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Support</h4>
+            <ul>
+              <li class="app-appstore"><a href="#">App Store</a></li>
+              <li class="app-play"><a href="#">Google Play</a></li>
+              <li class="app-droid"><a href="#">Android</a></li>
+              <li class="app-windows"><a href="#">Windows</a></li>
+              <li class="app-chorme"><a href="#">Chorme</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-secondary text-center">
+        <small>Made with <span class="heart">♥</span> by Fisaul Jeaumar</small>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal modal-login fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Login</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12">
+              <form class="login-form" method="post">
+                <input type="text" placeholder="Email or Username">
+                <input type="password" placeholder="Password">
+              </form>
+              <div class="forget-user">
+                <a href="#">Forget yout password?</a>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-wrap">
+                <button class="btn btn-default btn-sign-in">Sign in</button>
+                <button class="btn btn-fb">Facebook</button>
+                <button class="btn btn-twitter">Twitter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
